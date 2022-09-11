@@ -5,7 +5,6 @@ const StreamCreate = () => {
   return (
     <div>
         StreamCreate
-        <Link to='/'>Click Home</Link>
     </div>
   )
 }
