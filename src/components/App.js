@@ -1,8 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
-import { configureStore } from "@reduxjs/toolkit";
-// import { combineReducers } from "@reduxjs/toolkit";
+import { createStore } from "redux";
 import reducers from '../reducers';
 import StreamCreate from "./streams/StreamCreate";
 import StreamDelete from "./streams/StreamDelete";
@@ -11,7 +10,7 @@ import StreamList from "./streams/StreamList";
 import StreamShow from "./streams/StreamShow";
 import Header from "./Header";
 
-const store = configureStore(reducers);
+const store = createStore(reducers);
 
 const App = () => {
   return (
